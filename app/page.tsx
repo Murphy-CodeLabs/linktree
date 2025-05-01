@@ -16,7 +16,7 @@ const socialLinks = [
   {
     name: "Twitter",
     icon: IconBrandX,
-    href: "https://x.com/murphis_sol",
+    href: "https://x.com/murphyaidev",
     label: "Follow on X (Twitter)",
   },
   // {
