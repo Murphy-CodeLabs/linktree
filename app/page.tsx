@@ -2,7 +2,13 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import { Boxes } from "@/components/ui/background-boxes";
-import { IconWorld, IconBrandTelegram, IconBrandX, IconBrandGithub } from "@tabler/icons-react";
+import {
+  IconWorld,
+  IconBrandTelegram,
+  IconBrandX,
+  IconBrandGithub,
+  IconBrandDiscord,
+} from "@tabler/icons-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -30,6 +36,12 @@ const socialLinks = [
     icon: IconBrandTelegram,
     href: "https://t.me/murphyaidev",
     label: "Join Telegram Group",
+  },
+  {
+    name: "Discord",
+    icon: IconBrandDiscord,
+    href: "https://discord.gg/VD4wPvtwVn",
+    label: "Join Discord Community",
   },
 ];
 
@@ -75,7 +87,8 @@ export default function BackgroundBoxesDemo() {
                   ${link.name === "Website" && "hover:bg-emerald-500"}
                   ${link.name === "Twitter" && "hover:bg-black"}
                   ${link.name === "Github" && "hover:bg-gray-800"}
-                  ${link.name === "Telegram" && "hover:bg-[#229ED9]"}`}
+                  ${link.name === "Telegram" && "hover:bg-[#229ED9]"}
+                  ${link.name === "Discord" && "hover:bg-[#5865F2]"}`}
               >
                 <div className="absolute left-0 w-12 flex justify-center">
                   <link.icon
